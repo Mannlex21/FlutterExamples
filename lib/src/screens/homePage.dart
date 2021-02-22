@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Uso basico del Navigator"),
+        title: Text("Widgets"),
       ),
       body: Center(
         child: ListRoutes(),
@@ -48,6 +48,7 @@ class ListRoutes extends StatelessWidget {
     Route("Form", "form", null),
     Route("Keyboard", "keyboard", null),
     Route("Focus node", "focusNode", null),
+    Route("Drawer", "drawer", null),
   ];
 
   @override

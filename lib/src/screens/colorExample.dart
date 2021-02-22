@@ -4,7 +4,9 @@ class ColorsExample extends StatelessWidget {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de colors"),
+      ),
       body: Center(
         child: Container(
           // color: Color(0xff1dd1fe),// 0xff + el color en hexadecimal

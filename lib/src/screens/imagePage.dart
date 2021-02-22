@@ -5,7 +5,9 @@ class ImageExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de image"),
+      ),
       body: Center(
         child: Image.network(
           "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif",

@@ -5,7 +5,7 @@ class AppBarExample extends StatelessWidget {
   Widget build(BuildContext buildContext) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Uso de scaffold"),
+        title: Text("Uso de AppBar"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),

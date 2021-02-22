@@ -14,7 +14,7 @@ class _TypeFieldsExample extends State<TypeFieldsExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Implementacion de campos de formulario sin el widget form"),
+        title: Text("Uso de fields"),
       ),
       body: Column(
         children: [

@@ -4,6 +4,7 @@ import 'package:myapp/src/screens/assetsExample.dart';
 import 'package:myapp/src/screens/buttonPage.dart';
 import 'package:myapp/src/screens/colorExample.dart';
 import 'package:myapp/src/screens/columnPage.dart';
+import 'package:myapp/src/screens/drawerPage.dart';
 import 'package:myapp/src/screens/focusNodePage.dart';
 import 'package:myapp/src/screens/fontPage.dart';
 import 'package:myapp/src/screens/fieldsPage.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         "/form": (BuildContext buildContext) => FormsExample(),
         "/keyboard": (BuildContext buildContext) => KeyboardExamples(),
         "/focusNode": (BuildContext buildContext) => FocusNodeExample(),
+        "/drawer": (BuildContext buildContext) => DrawerExample(),
       },
     );
   }

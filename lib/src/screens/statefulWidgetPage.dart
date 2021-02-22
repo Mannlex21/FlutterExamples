@@ -14,7 +14,9 @@ class _MyHomePageState extends State<StatefulWidgetExample> {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de stateful widget"),
+      ),
       body: Center(
         child: Column(
           children: [

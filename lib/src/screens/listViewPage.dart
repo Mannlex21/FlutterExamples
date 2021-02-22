@@ -4,7 +4,9 @@ class ListViewExample extends StatelessWidget {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de list view"),
+      ),
       // body: ListView(
       //   children: [
       //     Card(

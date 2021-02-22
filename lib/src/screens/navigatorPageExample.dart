@@ -13,7 +13,7 @@ class NavigatorSecondPageExample extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Segunda pantalla"),
+        title: Text("Uso de navigator"),
       ),
       body: Center(
         child: Text("${arguments.name} ${arguments.lastName}"),

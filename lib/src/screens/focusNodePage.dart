@@ -20,7 +20,7 @@ class _FocusNodeExample extends State<FocusNodeExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Implementacion de campos de formulario sin el widget form"),
+        title: Text("Uso de focus node"),
       ),
       body: Form(
         key: formKey,

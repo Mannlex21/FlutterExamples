@@ -14,7 +14,9 @@ class _MyHomePageState extends State<ButtonExample> {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de buttons"),
+      ),
       body: Center(
         child: Column(
           children: [

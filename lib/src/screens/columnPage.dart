@@ -5,7 +5,7 @@ class ColumnExample extends StatelessWidget {
   Widget build(BuildContext buildContext) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Uso de scaffold"),
+          title: Text("Uso de column"),
         ),
         body: SizedBox(
           width: double.infinity, // Este atributo lo que hace es tomar el ancho de toda la pantalla

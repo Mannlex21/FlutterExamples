@@ -4,7 +4,9 @@ class AssetsExample extends StatelessWidget {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de assets"),
+      ),
       body: ListView(
         children: [
           Image.asset(

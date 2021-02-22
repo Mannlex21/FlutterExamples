@@ -4,7 +4,9 @@ class IconExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Uso de icons"),
+      ),
       body: Center(
         child: Column(
           verticalDirection: VerticalDirection.down,

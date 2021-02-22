@@ -5,7 +5,7 @@ class RowExample extends StatelessWidget {
   Widget build(BuildContext buildContext) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Uso de scaffold"),
+        title: Text("Uso de row"),
       ),
       body: Container(
         padding: const EdgeInsets.all(16.0),
