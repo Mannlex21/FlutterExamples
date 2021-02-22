@@ -50,6 +50,7 @@ class ListRoutes extends StatelessWidget {
     Route("Focus node", "focusNode", null),
     Route("Drawer", "drawer", null),
     Route("Snackbar", "snackbar", null),
+    Route("Simple dialog", "simpleDialog", null),
   ];
 
   @override

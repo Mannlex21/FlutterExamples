@@ -41,7 +41,7 @@ class SnackbarExample extends StatelessWidget {
       ),
     );
 
-    Scaffold.of(context).showSnackBar(snackbar);
-    // _scaffKeySnackbar.currentState.showSnackBar(snackbar);
+    Scaffold.of(context).showSnackBar(snackbar); // Con esta opcion se utiliza el contexto que se pasa a la funcion
+    // _scaffKeySnackbar.currentState.showSnackBar(snackbar); // con esta opcion se usa el id que se le asigno al scaffold
   }
 }

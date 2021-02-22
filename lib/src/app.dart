@@ -18,6 +18,7 @@ import 'package:myapp/src/screens/marginPaddingPage.dart';
 import 'package:myapp/src/screens/navigatorPageExample.dart';
 import 'package:myapp/src/screens/rowPage.dart';
 import 'package:myapp/src/screens/scaffoldPage.dart';
+import 'package:myapp/src/screens/simpleDialogPage.dart';
 import 'package:myapp/src/screens/snackbarPage.dart';
 import 'package:myapp/src/screens/statefulWidgetPage.dart';
 
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
         "/focusNode": (BuildContext buildContext) => FocusNodeExample(),
         "/drawer": (BuildContext buildContext) => DrawerExample(),
         "/snackbar": (BuildContext buildContext) => SnackbarExample(),
+        "/simpleDialog": (BuildContext buildContext) => SimpleDialogExample(),
       },
     );
   }
