@@ -4,6 +4,7 @@ import 'package:myapp/pages/assetsExample.dart';
 import 'package:myapp/pages/buttonPage.dart';
 import 'package:myapp/pages/colorExample.dart';
 import 'package:myapp/pages/columnPage.dart';
+import 'package:myapp/pages/focusNodePage.dart';
 import 'package:myapp/pages/fontPage.dart';
 import 'package:myapp/pages/fieldsPage.dart';
 import 'package:myapp/pages/formsPage.dart';
@@ -54,6 +55,7 @@ class MyApp extends StatelessWidget {
         "/field": (BuildContext buildContext) => TypeFieldsExample(),
         "/form": (BuildContext buildContext) => FormsExample(),
         "/keyboard": (BuildContext buildContext) => KeyboardExamples(),
+        "/focusNode": (BuildContext buildContext) => FocusNodeExample(),
       },
     );
   }
