@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/navigatorPageExample.dart';
+import 'package:myapp/src/screens/navigatorPageExample.dart';
 
 class FormsExample extends StatefulWidget {
   @override
