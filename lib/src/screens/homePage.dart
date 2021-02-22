@@ -49,6 +49,7 @@ class ListRoutes extends StatelessWidget {
     Route("Keyboard", "keyboard", null),
     Route("Focus node", "focusNode", null),
     Route("Drawer", "drawer", null),
+    Route("Snackbar", "snackbar", null),
   ];
 
   @override
