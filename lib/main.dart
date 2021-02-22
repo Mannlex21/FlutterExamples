@@ -10,6 +10,7 @@ import 'package:myapp/pages/formsPage.dart';
 import 'package:myapp/pages/homePage.dart';
 import 'package:myapp/pages/iconPage.dart';
 import 'package:myapp/pages/imagePage.dart';
+import 'package:myapp/pages/keyboardPage.dart';
 import 'package:myapp/pages/listViewPage.dart';
 import 'package:myapp/pages/marginPaddingPage.dart';
 import 'package:myapp/pages/navigatorPageExample.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         "/button": (BuildContext buildContext) => ButtonExample(),
         "/field": (BuildContext buildContext) => TypeFieldsExample(),
         "/form": (BuildContext buildContext) => FormsExample(),
+        "/keyboard": (BuildContext buildContext) => KeyboardExamples(),
       },
     );
   }
