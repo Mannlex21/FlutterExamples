@@ -9,7 +9,9 @@ class FormsExample extends StatefulWidget {
 class _FormsExample extends State<FormsExample> {
   // NOTA: cuando se usa form dentro de un ListView, los valores se borran de los fields cuando hace scroll, entonces lo que
   // se tiene que hacer es agregar las variables TextEditingController dentro del campo 'controller' en el TextFormField. Y se tiene
-  // que destruir las variables en el dispose, todo esto para que no este tomando espacio de memoria
+  // que destruir las variables en el dispose, todo esto para que no este tomando espacio de memoria. ListView destruye lo que no esta en pantalla
+  // NOTA 2: como otra opcion se puede usar la combinacion de SingleChildScrollView + Column cuando se trata de listas no tan grandes.
+  // ref: https://medium.com/flutterworld/flutter-problem-listview-vs-column-singlechildscrollview-43fdde0fa355
   String nameValue;
   String lastNameValue;
   final formKey = GlobalKey<FormState>(); //Esta variable se puede obtener de cualquier widget del arbol de widget
@@ -67,11 +69,11 @@ class _FormsExample extends State<FormsExample> {
     );
   }
 
-  void submit(BuildContext context) {
-    if (formKey.currentState.validate()) {
-      formKey.currentState.save();
-      Navigator.of(context).pushNamed("/navigator", arguments: NavigatorSecondPageArguments(name: this.nameValue, lastName: this.lastNameValue));
-    }
+  @override
+  void dispose() {
+    super.dispose();
+    this.nameController.dispose();
+    this.lastNameController.dispose();
   }
 
   @override
@@ -80,10 +82,10 @@ class _FormsExample extends State<FormsExample> {
     lastNameController.text = "Murillo";
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-    this.nameController.dispose();
-    this.lastNameController.dispose();
+  void submit(BuildContext context) {
+    if (formKey.currentState.validate()) {
+      formKey.currentState.save();
+      Navigator.of(context).pushNamed("/navigator", arguments: NavigatorSecondPageArguments(name: this.nameValue, lastName: this.lastNameValue));
+    }
   }
 }
