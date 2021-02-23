@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SimpleDialogExample extends StatelessWidget {
-  SimpleDialogExample({Key key}) : super(key: key);
+class AlertDialogExample extends StatelessWidget {
+  AlertDialogExample({Key key}) : super(key: key);
 
   final _scaffKeySnackbar = GlobalKey<ScaffoldState>();
 
@@ -13,7 +13,7 @@ class SimpleDialogExample extends StatelessWidget {
         title: Text("Uso del simple dialog"),
       ),
       body: Center(
-        child: FlatButton(
+        child: TextButton(
           child: Text("Mostrar"),
           onPressed: () => _showDialog(context),
         ),
@@ -25,21 +25,20 @@ class SimpleDialogExample extends StatelessWidget {
     showDialog(
       context: context,
       builder: (BuildContext context) {
-        return SimpleDialog(
-          title: Text("Seleccione"),
-          children: [
-            ListTile(
-              title: Text("Eliminar"),
-              leading: Icon(Icons.delete),
-              onTap: () {
+        return AlertDialog(
+          title: Text("Pregunta"),
+          content: Text("¿Seguro desea elmininar el elemento?"),
+          actions: [
+            TextButton(
+              child: Text("No"),
+              onPressed: () {
                 Navigator.pop(context);
               },
             ),
-            ListTile(
-              title: Text("Editar"),
-              leading: Icon(Icons.edit),
-              onTap: () {
-                Navigator.pop(context); // cerrar dialog cuando se elija una opcion
+            TextButton(
+              child: Text("Si"),
+              onPressed: () {
+                Navigator.pop(context);
               },
             )
           ],

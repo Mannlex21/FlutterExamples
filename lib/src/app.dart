@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/src/screens/alertDialogPage.dart';
+import 'package:myapp/src/screens/animationHeroPage.dart';
 import 'package:myapp/src/screens/appBarPage.dart';
 import 'package:myapp/src/screens/assetsExample.dart';
 import 'package:myapp/src/screens/buttonPage.dart';
@@ -58,6 +60,8 @@ class MyApp extends StatelessWidget {
         "/drawer": (BuildContext buildContext) => DrawerExample(),
         "/snackbar": (BuildContext buildContext) => SnackbarExample(),
         "/simpleDialog": (BuildContext buildContext) => SimpleDialogExample(),
+        "/alertDialog": (BuildContext buildContext) => AlertDialogExample(),
+        "/animationHero": (BuildContext buildContext) => AnimationHeroExample(),
       },
     );
   }

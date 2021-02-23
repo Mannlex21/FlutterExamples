@@ -13,7 +13,9 @@ class AssetsExample extends StatelessWidget {
             'assets/f1.png',
             scale: 10,
           ),
-          Image.asset('assets/f2.png'),
+          Image.asset(
+            'assets/f2.png',
+          ),
           Image.asset(
             'assets/f3.jpg',
             scale: 10,
