@@ -17,7 +17,8 @@ class AnimationHeroExample extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pushNamed('/animationHeroSecond', arguments: url);
             },
-            child: Hero( // con esto se hace la animacion de la imagen cuando entra a la sig pantalla
+            child: Hero(
+              // con esto se hace la animacion de la imagen cuando entra a la sig pantalla
               tag: url, //Debe ser el mismo que en el sig hero, es un ID, en este caso la url que nunca se repite
               child: Card(
                 child: FadeInImage(
@@ -28,7 +29,6 @@ class AnimationHeroExample extends StatelessWidget {
               ),
             ),
           );
-
         },
       ),
     );
